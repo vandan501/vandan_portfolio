@@ -69,14 +69,24 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-slate-900 border-b border-slate-800"
+                        className="md:hidden bg-slate-900 border-b border-slate-800 overflow-hidden"
                     >
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        setIsOpen(false);
+                                        // Small timeout to allow menu to close before scrolling
+                                        setTimeout(() => {
+                                            const element = document.querySelector(link.href);
+                                            if (element) {
+                                                element.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }, 100);
+                                    }}
                                     className="text-slate-300 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     {link.name}
