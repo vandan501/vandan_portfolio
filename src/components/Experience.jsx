@@ -7,14 +7,20 @@ const Experience = () => {
             company: "Infusion Analysts",
             role: "Full-Stack Developer",
             period: "June 2024 - Present",
-            description: "Developing scalable Fintech solutions. Focusing on production system stability, API optimization, and secure data handling.",
-            tech: ["React", "Node.js", "MySQL", "AWS", "Rest API", "JWT"]
+            points: [
+                "Developed and optimized REST APIs for fintech workflows",
+                "Worked on secure authentication and data handling",
+                "Improved stability of production systems"
+            ],
+
+            description: "Worked on production fintech systems, building and optimizing backend APIs, improving system stability, and implementing secure authentication and data flows",
+            tech: ["React", "Node.js", "Express", "AWS", "Rest API", "JWT", "Nest.js", "Third Party API Integration"]
         },
         {
             company: "Learniphi Technologies",
             role: "Full-Stack Developer",
             period: "Previous",
-            description: "Built and maintained full-stack web applications. Collaborated with cross-functional teams to deliver client-centric solutions.",
+            description: "Built and maintained LMS platforms, working on backend APIs, Open edX integrations, and frontend features while collaborating with cross-functional teams.",
             tech: ["MFE", "React", "OpenEdx", "Django", "MySQL", "AWS", "Rest API"]
         }
     ];
@@ -56,7 +62,13 @@ const Experience = () => {
                                     <Building2 className="w-4 h-4" />
                                     <span className="font-medium">{exp.company}</span>
                                 </div>
-
+                                {exp.points && (
+                                    <ul className="list-disc list-inside text-slate-400 mb-4 space-y-1">
+                                        {exp.points.map((point, i) => (
+                                            <li key={i}>{point}</li>
+                                        ))}
+                                    </ul>
+                                )}
                                 <p className="text-slate-400 mb-4 leading-relaxed">
                                     {exp.description}
                                 </p>
