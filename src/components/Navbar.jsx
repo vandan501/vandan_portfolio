@@ -17,6 +17,7 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', href: '#home' },
         { name: 'About', href: '#about' },
+        { name: 'Services', href: '#services' },
         { name: 'Skills', href: '#skills' },
         { name: 'Experience', href: '#experience' },
         { name: 'Contact', href: '#contact' },
@@ -28,10 +29,11 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <a href="#" className="flex items-center gap-2 group">
-                            <Code2 className="h-8 w-8 text-blue-500 group-hover:text-blue-400 transition-colors" />
-                            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                                VR
-                            </span>
+                            <div className="flex items-center gap-2 font-bold text-white">
+                                <span className="text-blue-500">&lt;/&gt;</span>
+                                <span>VR</span>
+                            </div>
+
                         </a>
                     </div>
 

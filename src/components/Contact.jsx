@@ -48,7 +48,7 @@ const Contact = () => {
                         Get In <span className="gradient-text">Touch</span>
                     </h2>
                     <p className="text-slate-400">
-                        Open for freelance opportunities and interesting projects.
+                        Available for freelance, contract, and full-time opportunities.
                     </p>
                 </motion.div>
 
@@ -66,6 +66,15 @@ const Contact = () => {
                             I'm currently available for freelance work and open to discussing new opportunities.
                             Whether you have a question or just want to say hi, I'll try my best to get back to you!
                         </p>
+
+                        <div className="space-y-4">
+                            <h4 className="text-lg font-semibold text-white">What I can help with?</h4>
+                            <ul className="text-slate-400 space-y-2">
+                                <li>• Full-stack web applications (React, Node, Django)</li>
+                                <li>• Backend APIs & system optimization</li>
+                                <li>• Fintech & LMS product development</li>
+                            </ul>
+                        </div>
 
                         <div className="space-y-4">
                             <a href="mailto:vandanraval2002@gmail.com" className="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition-colors">
@@ -104,7 +113,8 @@ const Contact = () => {
                                 </div>
                                 <h3 className="text-xl font-bold text-white">Message Sent!</h3>
                                 <p className="text-slate-400">
-                                    Thank you for reaching out. We will get back to you soon.
+                                    Thank you for reaching out! I’ll get back to you as soon as possible.
+
                                 </p>
                                 <button
                                     onClick={() => setIsSubmitted(false)}

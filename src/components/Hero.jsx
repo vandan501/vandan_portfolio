@@ -19,11 +19,10 @@ const Hero = () => {
                         Full-Stack Developer
                     </h2>
                     <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-6">
-                        Hi, I'm <span className="gradient-text">Vandan Raval</span>
+                        End-to-End <span className="gradient-text">Web Solutions</span>
                     </h1>
                     <p className="text-lg sm:text-xl text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Building robust production systems for Fintech & LMS domains.
-                        Focused on clean code, scalability, and seamless user experiences.
+                        Full-stack developer specializing in building, deploying, and maintaining production-grade systems.I help businesses design, build, deploy, and maintain scalable, secure web systems.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

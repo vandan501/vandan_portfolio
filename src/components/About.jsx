@@ -3,10 +3,10 @@ import { BadgeCheck, Terminal, Server, Globe } from 'lucide-react';
 
 const About = () => {
     const highlights = [
-        { icon: Terminal, title: "Clean Code", desc: "Maintainable & scalable architecture" },
-        { icon: Server, title: "Backend Systems", desc: "Robust API development (Node/Django)" },
-        { icon: Globe, title: "Modern Web", desc: "Performance-focused React/Next.js apps" },
-        { icon: BadgeCheck, title: "Production Ready", desc: "Experience with live Fintech products" }
+        { icon: Terminal, title: "Result-Oriented", desc: "Focusing on business goals and user needs" },
+        { icon: Server, title: "Robust Backends", desc: "Secure, performant APIs and database design" },
+        { icon: Globe, title: "Scalable Apps", desc: "Corporate websites and complex dashboards" },
+        { icon: BadgeCheck, title: "Production DNA", desc: "Reliable systems that scale with your growth" }
     ];
 
     return (
@@ -25,13 +25,13 @@ const About = () => {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6 text-slate-300 leading-relaxed">
                             <p>
-                                I am a passionate <span className="text-blue-400 font-semibold">Full-Stack Developer</span> with approximately 2 years of experience building production-grade web applications. Currently, I work at <span className="text-white font-medium">Infusion Analysts</span>, where I contribute to complex Fintech and LMS solutions.
+                                I am a <span className="text-blue-400 font-semibold">Full-Stack Solution Developer</span> with over 2 years of experience bringing production systems to life. My approach goes beyond writing code — I focus on understanding your business goals and delivering reliable, scalable solutions that work from day one.
                             </p>
                             <p>
-                                My journey started at <span className="text-white font-medium">Learniphi Technologies</span>, where I honed my skills in the MERN stack and Python ecosystem. I thrive on solving complex backend challenges while delivering pixel-perfect frontend interfaces.
+                                With a background in Fintech and LMS, I specialize in the <span className="text-white font-medium">MERN stack and Python ecosystem</span>. I handle the entire lifecycle of a feature, from secure backend architecture and database design to clean, performant user interfaces.
                             </p>
                             <p>
-                                Beyond coding, I am a collaborator who values transparency and results. Whether it's a small freelance project or a large-scale enterprise system, I bring a debugging mindset and a focus on quality.
+                                Whether you're a startup looking to launch or a business needing to automate a process, I bring a debugging mindset and a commitment to quality that ensures your project is production-ready and built to last.
                             </p>
                         </div>
 
